@@ -112,12 +112,12 @@ function ThreeCanvas(props) {
         })
     }, []); */
 
+    /* pixelRatio={Math.min(2, isMobile ? window.devicePixelRatio : 1)} */
 
     return (
         <div className="canvas-cont">
             <Canvas
                 camera={{position: [0, 2, 7]}}
-                pixelRatio={Math.min(2, isMobile ? window.devicePixelRatio : 1)}
                 gl={{ powerPreference: "high-performance", alpha: false, antialias: false, stencil: false, depth: false }}>
                 <color attach="background" args={["#0a0a0a"]} />
                 <fog color="#212121" attach="fog" near={8} far={30} />
