@@ -1,3 +1,7 @@
+body{
+  font-family: "Alata";
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,224 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.canvas-cont{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.comment-input-wrapper{
+  position: absolute;
+  top: 2vh;
+  left: 5vw;
+  z-index: 10000;
+  color: white;
+}
+
+input{
+  color: black;
+}
+
+.footer-wrapper{
+  position: absolute;
+  z-index: 10000;
+  bottom: 0;
+  width: 100vw;
+  height: auto;
+  background: rgba(0, 0, 0, 0.322);
+  display: flex;
+  flex-direction: row;
+}
+
+.icon{
+  position: relative;
+  background: transparent;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.rareaLogo{
+  background-image: url("./assets/rareaLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.listLogo{
+  background-image: url("./assets/listLogo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+}
+
+.banner{
+  position: absolute;
+  background: rgba(29, 29, 29, 0.5);
+  color: rgba(255, 255, 255, 0.692);
+  height: 30px;
+  border-radius: 10px;
+  width: 50vw;
+  margin: 5px;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 50s linear infinite;
+}
+
+.marquee2 span {
+  animation-delay: 25s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper{
+  position: absolute;
+  z-index: 10000;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 5px;
+  background: rgba(14, 14, 14, 0.9);
+}
+
+.about-wrapper{
+  color: white;
+}
+
+.text-wrapper{
+  text-align: left;
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.lineCont{
+  width: 100%;
+  height: 100px;
+}
+
+.line{
+  height: 1px;
+  width: 600px;
+  background: rgb(122, 122, 122);
+  position: relative;
+}
+
+.disclaimer{
+  font-size: 80%;
+  color:rgb(122, 122, 122)
+}
+
+.rareaDescription{
+  color:rgb(122, 122, 122)
+}
+
+.list-wrapper{
+ 
+}
+
+.input-wrapper{
+  
+}
+
+button{
+  background: rgba(255, 255, 255, 0.164);
+  color: white;
+  outline: none;
+  border-radius: 10px;
+  border-color: transparent;
+  font-family: 'Alata';
+  cursor: pointer;
+}
+
+button:focus {outline:0;}
+
+button:hover{
+  background: rgba(20, 20, 20, 0.164);
+}
+
+textarea{
+  background: transparent;
+  border-radius: 10px;
+  border-color: rgba(255, 255, 255, 0.164);
+  color: white;
+  padding: 20px;
+  width: 80%;
+}
+
+form{
+  width: 80vw;
+}
+
+.close-wrapper{
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  font-size: 20px;
+  z-index: 500000;
+  cursor: pointer;
+  color: greenyellow;
+}
+
+.listCont{
+  overflow-y: scroll;
+  height: 90%;
+  width: 80%;
+  color: white;
+  text-align: left;
+}
+
+.listCont::-webkit-scrollbar {
+  display: none;
+}
+
+.listItems{
+  margin: 40px 0px;
+}
+
+.listItems::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 5px;
+  background: white;
+  width: 40px;
+  left: 100%;
+  top: calc(50% - 2px);
+}
+
+.titles{
+  color: greenyellow;
 }
