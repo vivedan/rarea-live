@@ -18,7 +18,7 @@ function About(props) {
     return (
         <div className="about-wrapper wrapper centered">
             <Close setSlide={props.setSlide}/>
-            <div className="text-wrapper centered">
+            <div className="about-text-wrapper centered">
                 <p className="aboutText">{text1}</p>
                 <p className="aboutText">{text2}</p>
                 <p className="aboutText">{text3}</p>
