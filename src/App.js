@@ -5,12 +5,13 @@ import Footer from './components/Footer';
 import About from './components/About';
 import List from './components/List';
 import Input from './components/Input';
+import Welcome from './components/Welcome';
 
 import firebase from './firebase';
 
 function App() {
 
-  const [slide, setSlide] = useState("");
+  const [slide, setSlide] = useState("Welcome");
 
   useEffect(() =>{
     //console.log(slide);
@@ -39,6 +40,7 @@ function App() {
       {slide == "About" && <About setSlide={setSlide}/>}
       {slide == "List" && <List comments={comments} setSlide={setSlide}/>}
       {slide == "Input" && <Input setSlide={setSlide}/>}
+      {slide == "Welcome" && <Welcome setSlide={setSlide}/>}
     </div>
   );
 }

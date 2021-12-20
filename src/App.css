@@ -155,11 +155,27 @@ input{
   color: white;
 }
 
+.welcome-wrapper{
+  height: 33vh;
+  color: white;
+}
+
+.aboutText{
+  color: white;
+}
+
 .text-wrapper{
   text-align: left;
   width: 80%;
   height: 80%;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .lineCont{
@@ -259,4 +275,59 @@ form{
 
 .titles{
   color: greenyellow;
+}
+
+
+/* Portrait */
+@media screen and (orientation:portrait) and (max-width: 600px) {
+  /* Portrait styles here */
+
+  .welcome-wrapper{
+    height: 75vh;
+    color: white;
+  }
+
+}
+
+@media screen and (orientation:portrait) and (max-width: 320px) {
+  /* Portrait styles here */
+
+  body{
+    font-size: 13px;
+  }
+
+  .welcome-wrapper{
+    height: 75vh;
+    color: white;
+  }
+
+}
+
+/* Landscape */
+@media screen and (orientation:landscape) and (max-height: 700px) {
+  /* Landscape styles here */
+
+  body{
+    font-size: 12px;
+  }
+
+  .welcome-wrapper{
+    height: 50vh;
+    color: white;
+  }
+
+}
+
+@media screen and (orientation:landscape) and (max-height: 320px) {
+  /* Landscape styles here */
+
+  body{
+    font-size: 12px;
+  }
+
+  .welcome-wrapper{
+    height: 65vh;
+    color: white;
+  }
+
 }

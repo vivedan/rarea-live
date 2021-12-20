@@ -69,8 +69,9 @@ function Comment(props) {
                 onPointerLeave={handleHover}
                 position={props.position}
                 rotation={props.rotation}
+                text={props.value}
             >
-                {props.value}
+                <meshBasicMaterial attach="material" side={THREE.DoubleSide}/>
             </Text>
             
 

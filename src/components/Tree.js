@@ -110,7 +110,7 @@ function Tree(props) {
                     key={Math.random()}
                     scale={Math.random() * 0.1 + 0.5}
                 >
-                    <meshBasicMaterial attach="material" color={colors[Math.floor(Math.random()*colors.length)]} wireframe></meshBasicMaterial>
+                    <meshBasicMaterial attach="material" color={colors[Math.floor(Math.random()*colors.length)]}></meshBasicMaterial>
                     {/* {console.log(vertex.position.x)} */}
                 </mesh>
                 
@@ -147,7 +147,7 @@ function Tree(props) {
                 position={[0, 5.1, 0]}
                 scale={0.8}
             >
-                <meshBasicMaterial attach="material" color='GreenYellow' wireframe></meshBasicMaterial>
+                <meshBasicMaterial attach="material" color='GreenYellow'></meshBasicMaterial>
             </mesh>
 
         </group>
