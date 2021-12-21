@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import Close from './Close';
 
@@ -10,11 +10,7 @@ function Welcome(props) {
     const text2 = 'Warmest wishes and Happy New Year,';
 
     const text3 = 'Rarea team';
-
-    const text4 = '*No trees were harmed in the making of this Holiday Greeting.';
     
-    const text5 = "RAREA is a partnership formed by Patricia Mascarell Llombart and Daniel Vera Villalobos, two Valencian architects based in London. In their practice, they seek and explore new methods to present research and focus on the connection between the built environment and the inhabitant, which they call ‘invisible architecture’."
-
     return (
         <div className="welcome-wrapper wrapper centered">
             <Close setSlide={props.setSlide}/>

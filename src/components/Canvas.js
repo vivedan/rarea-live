@@ -1,9 +1,9 @@
-import React, { Suspense, Component, useMemo, useEffect, useState, useRef, useCallback } from 'react';
+import React, { Suspense, useMemo, useRef } from 'react';
 import * as THREE from 'three';
-import firebase from '../firebase';
-import { Canvas, extend, useFrame, useThree } from '@react-three/fiber';
+//import firebase from '../firebase';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import {OrbitControls} from '@react-three/drei';
-import { EffectComposer, DepthOfField, Bloom, Noise, Vignette, SSAO } from '@react-three/postprocessing';
+import { EffectComposer, Bloom, Noise, Vignette, SSAO } from '@react-three/postprocessing';
 /* import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer'
 import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass'
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
@@ -19,7 +19,7 @@ function ThreeCanvas(props) {
 
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     const mouse = useRef([0, 0]);
-    const onMouseMove = useCallback(({ clientX: x, clientY: y }) => (mouse.current = [x - window.innerWidth / 2, y - window.innerHeight / 2]), []);
+    //const onMouseMove = useCallback(({ clientX: x, clientY: y }) => (mouse.current = [x - window.innerWidth / 2, y - window.innerHeight / 2]), []);
 
     //EFFECTS
     /* function Effect() {

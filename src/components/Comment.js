@@ -1,10 +1,10 @@
-import React, { Suspense, Component, useRef, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import * as THREE from 'three';
-import { useGLTF, Text } from '@react-three/drei';
-import { applyProps, extend, useFrame } from '@react-three/fiber';
+import { Text } from '@react-three/drei';
+/* import { applyProps, extend, useFrame } from '@react-three/fiber';
 import { MeshSurfaceSampler } from 'three/examples/jsm/math/MeshSurfaceSampler.js';
 import logoPath from '../assets/rareaLogo.glb';
-import treePath from '../assets/rarea_ChristmasTree.glb';
+import treePath from '../assets/rarea_ChristmasTree.glb'; */
 import Alata from '../assets/Nunito-ExtraLight.ttf';
 
 import { useSpring, animated } from '@react-spring/three';

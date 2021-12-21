@@ -1,5 +1,5 @@
-import React, { Component, useEffect } from 'react';
-import storage from '../firebase';
+import React, { Component } from 'react';
+//import storage from '../firebase';
 import firebase from '../firebase';
 
 

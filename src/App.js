@@ -37,10 +37,10 @@ function App() {
     <div className="App">
       <ThreeCanvas comments={comments}/>
       <Footer setSlide={setSlide}/>
-      {slide == "About" && <About setSlide={setSlide}/>}
-      {slide == "List" && <List comments={comments} setSlide={setSlide}/>}
-      {slide == "Input" && <Input setSlide={setSlide}/>}
-      {slide == "Welcome" && <Welcome setSlide={setSlide}/>}
+      {slide === "About" && <About setSlide={setSlide}/>}
+      {slide === "List" && <List comments={comments} setSlide={setSlide}/>}
+      {slide === "Input" && <Input setSlide={setSlide}/>}
+      {slide === "Welcome" && <Welcome setSlide={setSlide}/>}
     </div>
   );
 }

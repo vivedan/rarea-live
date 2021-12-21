@@ -1,7 +1,7 @@
-import React, { Suspense, Component, useRef, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import * as THREE from 'three';
 import { useGLTF, Text } from '@react-three/drei';
-import { extend, useFrame } from '@react-three/fiber';
+import { extend } from '@react-three/fiber';
 import { MeshSurfaceSampler } from 'three/examples/jsm/math/MeshSurfaceSampler.js';
 import logoPath from '../assets/rareaLogo.glb';
 import treePath from '../assets/rarea_ChristmasTree.glb';
@@ -24,9 +24,9 @@ function Tree(props) {
     const amountText = props.comments.length;
 
 
-    const textArray = ['Hi there!', 'Merry Christmas everyone!', 'I wish you were here', "What's this and how can it be so cool? lol", 'Dani hemos entrado y escrito pero no sabemos qué hacer', 'Patricia, muy chulo'];
+    /* const textArray = ['Hi there!', 'Merry Christmas everyone!', 'I wish you were here', "What's this and how can it be so cool? lol", 'Dani hemos entrado y escrito pero no sabemos qué hacer', 'Patricia, muy chulo'];
 
-    const textArray2 = new Array(amountText).fill(textArray).flat();
+    const textArray2 = new Array(amountText).fill(textArray).flat(); */
 
 
     const logoPosArray = [];
@@ -66,7 +66,7 @@ function Tree(props) {
             tempObject.scale.setScalar(Math.random() * 0.1 + 0.5);
             tempObject.rotation.x = Math.PI/2;
             tempObject.lookAt(new THREE.Vector3(0, tempPosition.y, 0));
-            tempObject.rotation.z = i % 2 == 0 ? Math.PI/2 : 0;
+            tempObject.rotation.z = i % 2 === 0 ? Math.PI/2 : 0;
             tempObject.updateMatrix();
             textPosArray.push(tempObject);
             //textPosArray.push({position: tempObject.position, rotation: tempObject.rotation});
