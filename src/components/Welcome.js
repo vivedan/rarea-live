@@ -13,7 +13,7 @@ function Welcome(props) {
 
     const text4 = '*You can navigate the tree using your fingers on phone or mouse on your laptop desktop.';
 
-    const text1ESP = "¡Rarea Studio cumple seis meses! Al llegar el fin de año, nos gustaría celebrar las fiestas con todos vosotros y crear un espacio donde juntos podamos compartir nuestros pensamientos y buenos deseos, independienemente de la distancia que nos pueda separar. ¡Ayúdanos a formar nuestro árbol y deja tu comentario!"
+    const text1ESP = "¡Rarea Studio cumple seis meses! Al llegar el fin de año, nos gustaría celebrar las fiestas con todos vosotros y crear un espacio donde juntos podamos compartir nuestros pensamientos y buenos deseos, independientemente de la distancia que nos pueda separar. ¡Ayúdanos a formar nuestro árbol y deja tu comentario!"
     
     const text2ESP = 'Felices fiestas y Feliz año nuevo,';
 

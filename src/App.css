@@ -298,7 +298,7 @@ form{
   position: relative;
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 35%;
   justify-content: space-around;
 }
 
