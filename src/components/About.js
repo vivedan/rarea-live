@@ -15,7 +15,7 @@ function About(props) {
     
     const text5 = "RAREA is a partnership formed by Patricia Mascarell Llombart and Daniel Vera Villalobos, two Valencian architects based in London. In their practice, they seek and explore new methods to present research and focus on the connection between the built environment and the inhabitant, which they call ‘invisible architecture’."
 
-    const text1ESP = "¡Rarea Studio cumple seis meses! Al llegar el fin de año, nos gustaría celebrar las fiestas con todos vosotros y crear un espacio donde juntos podamos compartir nuestros pensamientos y buenos deseos, independienemente de la distancia que nos pueda seprar. ¡Ayúdanos a formar nuestro árbol y deja tu comentario!"
+    const text1ESP = "¡Rarea Studio cumple seis meses! Al llegar el fin de año, nos gustaría celebrar las fiestas con todos vosotros y crear un espacio donde juntos podamos compartir nuestros pensamientos y buenos deseos, independienemente de la distancia que nos pueda separar. ¡Ayúdanos a formar nuestro árbol y deja tu comentario!"
     
     const text2ESP = 'Felices fiestas y Feliz año nuevo,';
 
@@ -33,22 +33,33 @@ function About(props) {
                 <p className="aboutText">{text1ESP}</p>
                 <p className="aboutText">{text2ESP}</p>
                 <p className="aboutText">{text3ESP}</p>
-                <p className="aboutText disclaimer">{text4ESP}</p>
+                {/* <p className="aboutText disclaimer">{text4ESP}</p> */}
                 <div className="lineCont">
                     <div className="line centered"></div>
                 </div>
                 <p className="aboutText rareaDescription">{text5ESP}</p>
+                <p className="aboutText">Síguenos en redes sociales:</p>
+                <div className="SSMMCont">
+                    <a href="https://www.instagram.com/rareastudio/" target="_blank"><div className="logoSSMM instagram" placeholder="instagram"></div></a>
+                    <a href="https://twitter.com/RareaStudio" target="_blank"><div className="logoSSMM twitter" placeholder="twitter"></div></a>
+                </div>
             </div>}
             {props.language !== "es" && <div className="about-text-wrapper centered">
                 <p className="aboutText">{text1}</p>
                 <p className="aboutText">{text2}</p>
                 <p className="aboutText">{text3}</p>
-                <p className="aboutText disclaimer">{text4}</p>
+                {/* <p className="aboutText disclaimer">{text4}</p> */}
                 <div className="lineCont">
                     <div className="line centered"></div>
                 </div>
                 <p className="aboutText rareaDescription">{text5}</p>
+                <p className="aboutText">Follow us on Social Media:</p>
+                <div className="SSMMCont">
+                    <a href="https://www.instagram.com/rareastudio/" target="_blank"><div className="logoSSMM instagram" placeholder="instagram"></div></a>
+                    <a href="https://twitter.com/RareaStudio" target="_blank"><div className="logoSSMM twitter" placeholder="twitter"></div></a>
+                </div>
             </div>}
+            
         </div>
     );
 }

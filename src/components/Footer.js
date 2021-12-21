@@ -6,7 +6,11 @@ function Footer(props) {
 
     const message = props.language === "es" ? '¡Haz click aquí para dejar tu mensaje!' : 'Click here to send your message!';
 
-    const text = message + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0';
+    const message2 = props.language === "es" ? '¿Te has dado cuenta de que puedes navegar la escena?' : 'Did you know you can navigate the scene?';
+
+    const spaces = '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0';
+
+    const text = message + spaces + message2 + spaces;
 
     const textArray = new Array(4).fill(text);
     

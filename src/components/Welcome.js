@@ -11,11 +11,15 @@ function Welcome(props) {
 
     const text3 = 'Rarea team';
 
-    const text1ESP = "¡Rarea Studio cumple seis meses! Al llegar el fin de año, nos gustaría celebrar las fiestas con todos vosotros y crear un espacio donde juntos podamos compartir nuestros pensamientos y buenos deseos, independienemente de la distancia que nos pueda seprar. ¡Ayúdanos a formar nuestro árbol y deja tu comentario!"
+    const text4 = '*You can navigate the tree using your fingers on phone or mouse on your laptop desktop.';
+
+    const text1ESP = "¡Rarea Studio cumple seis meses! Al llegar el fin de año, nos gustaría celebrar las fiestas con todos vosotros y crear un espacio donde juntos podamos compartir nuestros pensamientos y buenos deseos, independienemente de la distancia que nos pueda separar. ¡Ayúdanos a formar nuestro árbol y deja tu comentario!"
     
     const text2ESP = 'Felices fiestas y Feliz año nuevo,';
 
     const text3ESP = 'Equipo Rarea';
+
+    const text4ESP = '*Puedes navegar el árbol usando los dedos en tu teléfono o el ratón en tu ordenador.';
     
     return (
         <div className="welcome-wrapper wrapper centered">
@@ -24,11 +28,15 @@ function Welcome(props) {
                 <p className="aboutText">{text1ESP}</p>
                 <p className="aboutText">{text2ESP}</p>
                 <p className="aboutText">{text3ESP}</p>
+                <p className="pointer titles" onClick={() => props.setSlide("")}>Entrar</p>
+                <p className="aboutText disclaimer">{text4ESP}</p>
             </div>}
             {props.language !== "es" && <div className="text-wrapper centered">
                 <p className="aboutText">{text1}</p>
                 <p className="aboutText">{text2}</p>
                 <p className="aboutText">{text3}</p>
+                <p className="pointer titles" onClick={() => props.setSlide("")}>Enter</p>
+                <p className="aboutText disclaimer">{text4}</p>
             </div>}
         </div>
     );
