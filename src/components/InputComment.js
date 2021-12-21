@@ -13,7 +13,18 @@ class InputComment extends Component {
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        //this.processLanguage = this.processLanguage.bind(this);
     }
+
+    /* processLanguage(){
+        //console.log(this.props.language);
+        const language = this.props.language;
+        if(language === "es"){
+            console.log("Hola!");
+        }else{
+            console.log("Hello!");
+        }
+    } */
 
 
     handleChange(e){
@@ -27,6 +38,7 @@ class InputComment extends Component {
     componentDidMount() {
         this._isMounted = true;
         this.setState();
+        //this.processLanguage();
     }
 
 
@@ -56,11 +68,13 @@ class InputComment extends Component {
         return ( 
             <div className="comment-input-wrapper centered">
                 <form onSubmit={this.handleSubmit}>
-                    <label htmlFor="comment">We would love to hear from you:</label>
+                    {this.props.language === "es" && <label htmlFor="comment">Nos encantaría oír de ti:</label>}
+                    {this.props.language !== "es" && <label htmlFor="comment">We would love to hear from you:</label>}
                     <br></br>
-                    <textarea id="comment" type="text" rows="4" cols="50" maxLength="140" name="Comment" placeholder="Comment" onChange={this.handleChange} value={this.state.comment}></textarea>
+                    <textarea id="comment" type="text" rows="4" cols="50" maxLength="140" name="Comment" placeholder="" onChange={this.handleChange} value={this.state.comment}></textarea>
                     <br></br>
-                    <button>Hang your comment on the tree!</button>
+                    {this.props.language === "es" && <button>¡Cuelga tu comentario en el árbol!</button>}
+                    {this.props.language !== "es" && <button>Hang your comment on the tree!</button>}
                 </form>
                 
             </div>

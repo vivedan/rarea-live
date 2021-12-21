@@ -19,6 +19,8 @@ function App() {
 
   const [comments, setComments] = useState([]);
 
+  const [language, setLanguage] = useState();
+
   useEffect(() => {
       const projectsRef = firebase.database().ref('tree-comments');
       projectsRef.on('value', (snapshot) => {
@@ -27,7 +29,14 @@ function App() {
           Object.values(items).forEach(item => newState.push(item));
           setComments(newState);
       })
+      checkLanguage();
   }, []);
+
+  function checkLanguage(){
+    var lang = window.navigator.userLanguage || window.navigator.language;
+    setLanguage(lang.substring(0, 2));
+    //console.log(language); //works IE/SAFARI/CHROME/FF
+  }
 
   /* useEffect(() =>{
     console.log(comments);
@@ -36,11 +45,11 @@ function App() {
   return (
     <div className="App">
       <ThreeCanvas comments={comments}/>
-      <Footer setSlide={setSlide}/>
-      {slide === "About" && <About setSlide={setSlide}/>}
-      {slide === "List" && <List comments={comments} setSlide={setSlide}/>}
-      {slide === "Input" && <Input setSlide={setSlide}/>}
-      {slide === "Welcome" && <Welcome setSlide={setSlide}/>}
+      <Footer setSlide={setSlide} language={language}/>
+      {slide === "About" && <About setSlide={setSlide} language={language}/>}
+      {slide === "List" && <List comments={comments} setSlide={setSlide} language={language}/>}
+      {slide === "Input" && <Input setSlide={setSlide} language={language}/>}
+      {slide === "Welcome" && <Welcome setSlide={setSlide} language={language}/>}
     </div>
   );
 }

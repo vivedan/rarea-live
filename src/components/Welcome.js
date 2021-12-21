@@ -10,15 +10,26 @@ function Welcome(props) {
     const text2 = 'Warmest wishes and Happy New Year,';
 
     const text3 = 'Rarea team';
+
+    const text1ESP = "¡Rarea Studio cumple seis meses! Al llegar el fin de año, nos gustaría celebrar las fiestas con todos vosotros y crear un espacio donde juntos podamos compartir nuestros pensamientos y buenos deseos, independienemente de la distancia que nos pueda seprar. ¡Ayúdanos a formar nuestro árbol y deja tu comentario!"
+    
+    const text2ESP = 'Felices fiestas y Feliz año nuevo,';
+
+    const text3ESP = 'Equipo Rarea';
     
     return (
         <div className="welcome-wrapper wrapper centered">
             <Close setSlide={props.setSlide}/>
-            <div className="text-wrapper centered">
+            {props.language === "es" && <div className="text-wrapper centered">
+                <p className="aboutText">{text1ESP}</p>
+                <p className="aboutText">{text2ESP}</p>
+                <p className="aboutText">{text3ESP}</p>
+            </div>}
+            {props.language !== "es" && <div className="text-wrapper centered">
                 <p className="aboutText">{text1}</p>
                 <p className="aboutText">{text2}</p>
                 <p className="aboutText">{text3}</p>
-            </div>
+            </div>}
         </div>
     );
 }

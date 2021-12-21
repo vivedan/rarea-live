@@ -114,6 +114,7 @@ input{
   white-space: nowrap;
   overflow: hidden;
   position: absolute;
+  width: 50vw;
 }
 
 .marquee span {

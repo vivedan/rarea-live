@@ -4,7 +4,9 @@ import React from 'react';
 
 function Footer(props) {
 
-    const text = 'Click here to send your message!' + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0';
+    const message = props.language === "es" ? '¡Haz click aquí para dejar tu mensaje!' : 'Click here to send your message!';
+
+    const text = message + '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0';
 
     const textArray = new Array(4).fill(text);
     
@@ -19,9 +21,9 @@ function Footer(props) {
                 <p className="marquee">
                     <span>{joinedText} &nbsp;</span>
                 </p>
-                <p className="marquee marquee2">
+                {/* <p className="marquee marquee2">
                     <span>{joinedText} &nbsp;</span>
-                </p>
+                </p> */}
             </div>
         </div>
     );

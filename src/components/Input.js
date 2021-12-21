@@ -8,7 +8,7 @@ function Input(props) {
         <div className="input-wrapper wrapper centered">
             <Close setSlide={props.setSlide}/>
             
-            <InputComment setSlide={props.setSlide}/>
+            <InputComment setSlide={props.setSlide} language={props.language}/>
             
         </div>
     );
