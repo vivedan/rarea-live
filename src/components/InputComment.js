@@ -85,8 +85,9 @@ class InputComment extends Component {
         return ( 
             <div className="comment-input-wrapper centered">
                 <form onSubmit={this.handleSubmit}>
-                    {this.props.language === "es" && <label htmlFor="comment">Nos encantaría oír de ti:</label>}
-                    {this.props.language !== "es" && <label htmlFor="comment">We would love to hear from you:</label>}
+                    {this.props.language === "es" && <label htmlFor="comment">Aquí puedes escribir tu mensaje para nuestro árbol (máx. 140 carácteres):</label>}
+                    {this.props.language !== "es" && <label htmlFor="comment">You can write here your message for our tree (140 characters max.):</label>}
+                    <br></br>
                     <br></br>
                     <textarea id="comment" type="text" rows="4" cols="50" maxLength="140" name="Comment" placeholder="" onChange={this.handleChange} value={this.state.comment}></textarea>
                     <br></br>

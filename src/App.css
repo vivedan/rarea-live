@@ -91,7 +91,7 @@ input{
   background-repeat: no-repeat;
 }
 .listLogo{
-  background-image: url("./assets/listLogo.png");
+  background-image: url("./assets/listIcon3.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: 30px;
@@ -232,6 +232,8 @@ button{
   border-color: transparent;
   font-family: 'Alata';
   cursor: pointer;
+  font-size: 15px;
+  padding: 2px 15px;
 }
 
 button:focus {outline:0;}
