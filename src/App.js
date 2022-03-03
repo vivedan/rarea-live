@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className="App">
-      <Route path="/users/:username">{(params) => <Users user={params.username} />}</Route>
+      <Route path="/team/:username">{(params) => <Users user={params.username} />}</Route>
       <Route path="/">
         <ThreeCanvas comments={comments}/>
         <Footer setSlide={setSlide} language={language}/>
