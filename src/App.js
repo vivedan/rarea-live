@@ -6,6 +6,9 @@ import About from './components/About';
 import List from './components/List';
 import Input from './components/Input';
 import Welcome from './components/Welcome';
+import Users from './components/Users';
+
+import { Router, Route, Link } from "wouter";
 
 import firebase from './firebase';
 
@@ -44,12 +47,16 @@ function App() {
 
   return (
     <div className="App">
-      <ThreeCanvas comments={comments}/>
-      <Footer setSlide={setSlide} language={language}/>
-      {slide === "About" && <About setSlide={setSlide} language={language}/>}
-      {slide === "List" && <List comments={comments} setSlide={setSlide} language={language}/>}
-      {slide === "Input" && <Input setSlide={setSlide} language={language}/>}
-      {slide === "Welcome" && <Welcome setSlide={setSlide} language={language}/>}
+      <Route path="/users/:username">{(params) => <Users user={params.username} />}</Route>
+      <Route path="/">
+        <ThreeCanvas comments={comments}/>
+        <Footer setSlide={setSlide} language={language}/>
+        {slide === "About" && <About setSlide={setSlide} language={language}/>}
+        {slide === "List" && <List comments={comments} setSlide={setSlide} language={language}/>}
+        {slide === "Input" && <Input setSlide={setSlide} language={language}/>}
+        {slide === "Welcome" && <Welcome setSlide={setSlide} language={language}/>}
+      </Route>
+      
     </div>
   );
 }
