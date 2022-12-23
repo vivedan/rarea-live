@@ -51,7 +51,12 @@ function App() {
     <div className="App">
       {/* <Route path="/team/:username">{(params) => <Users user={params.username} />}</Route> */}
       <Route path="/">
-        { setLocation("/tree") }
+        <ThreeCanvas comments={comments}/>
+        <Footer setSlide={setSlide} language={language}/>
+        {slide === "About" && <About setSlide={setSlide} language={language}/>}
+        {slide === "List" && <List comments={comments} setSlide={setSlide} language={language}/>}
+        {slide === "Input" && <Input setSlide={setSlide} language={language}/>}
+        {slide === "Welcome" && <Welcome setSlide={setSlide} language={language}/>}
       </Route>
       <Route path="/tree">
         <ThreeCanvas comments={comments}/>
