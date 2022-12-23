@@ -26,7 +26,7 @@ function App() {
 
   const [language, setLanguage] = useState();
 
-  useEffect(() => {
+  /* useEffect(() => {
       const projectsRef = firebase.database().ref('tree-comments');
       projectsRef.on('value', (snapshot) => {
           let items = snapshot.val();
@@ -35,7 +35,7 @@ function App() {
           setComments(newState);
       })
       checkLanguage();
-  }, []);
+  }, []); */
 
   function checkLanguage(){
     var lang = window.navigator.userLanguage || window.navigator.language;
