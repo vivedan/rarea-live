@@ -8,13 +8,15 @@ import Input from './components/Input';
 import Welcome from './components/Welcome';
 import Users from './components/Users';
 
-import { Router, Route, Link } from "wouter";
+import { Router, Route, Link, useLocation } from "wouter";
 
 import firebase from './firebase';
 
 function App() {
 
   const [slide, setSlide] = useState("Welcome");
+
+  const [location, setLocation] = useLocation();
 
   useEffect(() =>{
     //console.log(slide);
@@ -47,8 +49,11 @@ function App() {
 
   return (
     <div className="App">
-      <Route path="/team/:username">{(params) => <Users user={params.username} />}</Route>
+      {/* <Route path="/team/:username">{(params) => <Users user={params.username} />}</Route> */}
       <Route path="/">
+        { setLocation("/tree") }
+      </Route>
+      <Route path="/tree">
         <ThreeCanvas comments={comments}/>
         <Footer setSlide={setSlide} language={language}/>
         {slide === "About" && <About setSlide={setSlide} language={language}/>}
