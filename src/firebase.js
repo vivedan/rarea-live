@@ -19,7 +19,7 @@ import 'firebase/compat/storage';
   measurementId: "G-4T5SDFE0QQ",
   databaseURL: "https://testreact-eac3e-default-rtdb.europe-west1.firebasedatabase.app"
 }; */
-/* const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyB_y-0VmdtqATaIS5d5YaAxRWqv6O6c0yU",
   authDomain: "rarea-tree-christmas.firebaseapp.com",
   projectId: "rarea-tree-christmas",
@@ -34,5 +34,5 @@ firebase.initializeApp(firebaseConfig);
 //const storage = firebase.storage();
 //const analytics = getAnalytics(app);
 
-//export {storage};*/
+//export {storage};
 export default firebase; 

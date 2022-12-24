@@ -10,7 +10,7 @@ import Users from './components/Users';
 
 import { Router, Route, Link, useLocation } from "wouter";
 
-//import firebase from './firebase';
+import firebase from './firebase';
 
 function App() {
 
