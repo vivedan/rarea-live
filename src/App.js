@@ -26,7 +26,7 @@ function App() {
 
   const [language, setLanguage] = useState();
 
-  /* useEffect(() => {
+  useEffect(() => {
       const projectsRef = firebase.database().ref('tree-comments');
       projectsRef.on('value', (snapshot) => {
           let items = snapshot.val();
@@ -41,11 +41,11 @@ function App() {
     var lang = window.navigator.userLanguage || window.navigator.language;
     setLanguage(lang.substring(0, 2));
     //console.log(language); //works IE/SAFARI/CHROME/FF
-  } */
+  } 
 
   /* useEffect(() =>{
     console.log(comments);
-  }, [comments]); */
+  }, [comments]);*/
 
   return (
     <div className="App">
