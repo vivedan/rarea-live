@@ -5,7 +5,7 @@ import Close from './Close';
 function About(props) {
 
 
-    const text1 = "Rarea Studio is 6 months old! As the end of the year approaches, we wanted to celebrate the Holidays with all of you and create a space where we could all share our thoughts and best wishes regardless of the distance that may separate us. Help us shape our tree and leave your comment!"
+    const text1 = "As the end of the year approaches, we wanted to celebrate the Holidays with all of you and create a space where we could all share our thoughts and best wishes regardless of the distance that may separate us. Help us shape our tree and leave your comment!"
     
     const text2 = 'Warmest wishes and Happy New Year,';
 
@@ -13,9 +13,9 @@ function About(props) {
 
     const text4 = '*No trees were harmed in the making of this Holiday Greeting.';
     
-    const text5 = "RAREA is a partnership formed by Patricia Mascarell Llombart and Daniel Vera Villalobos, two Valencian architects based in London. In their practice, they seek and explore new methods to present elements of architectural research to an open audience, focusing primarily on the emotional connection between the built environment, the inhabitant, and the systems that bring them together, which they refer to as ‘invisible architecture’."
+    const text5 = "RAREA is a partnership formed in London by Patricia Mascarell Llombart and Daniel Vera Villalobos, two architects & designers based in Valencia. In their practice, they seek and explore new methods to present elements of architectural research to an open audience, focusing primarily on the emotional connection between the built environment, the inhabitant, and the systems that bring them together, which they refer to as ‘invisible architecture’."
 
-    const text1ESP = "¡Rarea Studio cumple seis meses! Al llegar el fin de año, nos gustaría celebrar las fiestas con todos vosotros y crear un espacio donde juntos podamos compartir nuestros pensamientos y buenos deseos, independientemente de la distancia que nos pueda separar. ¡Ayúdanos a formar nuestro árbol y deja tu comentario!"
+    const text1ESP = "Al llegar el fin de este año de cambios, nos gustaría celebrar las fiestas con todos vosotros y crear un espacio donde juntos podamos compartir nuestros pensamientos y buenos deseos, independientemente de la distancia que nos pueda separar. ¡Ayúdanos a formar nuestro árbol y deja tu comentario!"
     
     const text2ESP = 'Felices fiestas y Feliz año nuevo,';
 
@@ -23,7 +23,7 @@ function About(props) {
 
     const text4ESP = '*Ningún árbol ha sido dañado en la producción de esta tarjeta.';
     
-    const text5ESP = "RAREA es una sociedad formada por Patricia Mascarell Llombart y Daniel Vera Villalobos, dos arquitectos valencianos con sede en Londres. En sus proyectos, el equipo busca y explora nuevas formas de acercar elementos de investigación arquitéctonica a una audiencia abierta, con especial atención a la conexión emocional entre lo construido, el habitante y los sistemas que la hacen posible, a los que se refieren como 'arquitectura invisible'."
+    const text5ESP = "RAREA es una sociedad formada en Londres por Patricia Mascarell Llombart y Daniel Vera Villalobos, dos arquitectos y diseñadores con sede en Valencia. En sus proyectos, el equipo busca y explora nuevas formas de acercar elementos de investigación arquitéctonica a una audiencia abierta, con especial atención a la conexión emocional entre lo construido, el habitante y los sistemas que la hacen posible, a los que se refieren como 'arquitectura invisible'."
 
 
     return (

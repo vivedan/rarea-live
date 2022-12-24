@@ -89,13 +89,15 @@ input{
   background-image: url("./assets/rareaLogo.png");
   background-size: contain;
   background-repeat: no-repeat;
+  opacity: 0.8;
 }
 .listLogo{
-  background-image: url("./assets/listIcon3.png");
+  background-image: url("./assets/listIcon4.png");
   background-size: contain;
   background-repeat: no-repeat;
   height: 30px;
   width: 30px;
+  opacity: 0.8;
 }
 
 .banner{
@@ -262,7 +264,7 @@ form{
   font-size: 20px;
   z-index: 500000;
   cursor: pointer;
-  color: greenyellow;
+  color: lightsalmon;
 }
 
 .listCont{
@@ -293,7 +295,7 @@ form{
 }
 
 .titles{
-  color: greenyellow;
+  color: lightsalmon;
 }
 
 .SSMMCont{

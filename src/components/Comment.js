@@ -5,7 +5,7 @@ import { Text } from '@react-three/drei';
 import { MeshSurfaceSampler } from 'three/examples/jsm/math/MeshSurfaceSampler.js';
 import logoPath from '../assets/rareaLogo.glb';
 import treePath from '../assets/rarea_ChristmasTree.glb'; */
-import Alata from '../assets/Nunito-ExtraLight.ttf';
+import Alata from '../assets/Nunito-SemiBold.ttf';
 
 import { useSpring, animated } from '@react-spring/three';
 
@@ -30,7 +30,7 @@ function Comment(props) {
         }else {
             setHovered(false);
             document.body.style.cursor = "default";
-            e.object.color = "DimGrey";
+            e.object.color = "Black";
         }
         
     };
@@ -55,7 +55,7 @@ function Comment(props) {
             {/* {TEXT} */}
                 
             <Text
-                color="DimGrey"
+                color="Black"
                 anchorX="center" // default
                 anchorY="middle" // default
                 textAlign='center'

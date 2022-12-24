@@ -95,7 +95,9 @@ function Tree(props) {
     
     const AnimatedText = animated(Text);
 
-    const colors = ['Chartreuse', 'GreenYellow', 'PaleGreen'];
+    //const colors = ['Chartreuse', 'GreenYellow', 'PaleGreen'];
+
+    const colors = ['LightSalmon', 'Gold', 'NavajoWhite'];
 
     return (
         <group>
@@ -110,7 +112,7 @@ function Tree(props) {
                     key={Math.random()}
                     scale={Math.random() * 0.1 + 0.5}
                 >
-                    <meshBasicMaterial attach="material" color={colors[Math.floor(Math.random()*colors.length)]}></meshBasicMaterial>
+                    <meshStandardMaterial attach="material" emissive={colors[Math.floor(Math.random()*colors.length)]} emissiveIntensity={2}></meshStandardMaterial>
                     {/* {console.log(vertex.position.x)} */}
                 </mesh>
                 
@@ -147,7 +149,7 @@ function Tree(props) {
                 position={[0, 5.1, 0]}
                 scale={0.8}
             >
-                <meshBasicMaterial attach="material" color='GreenYellow'></meshBasicMaterial>
+                <meshBasicMaterial attach="material" color='MistyRose'></meshBasicMaterial>
             </mesh>
 
         </group>

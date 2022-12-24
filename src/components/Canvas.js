@@ -94,7 +94,7 @@ function ThreeCanvas(props) {
             <pointLight ref={light} distance={10} intensity={2} color="lightblue" />
             <instancedMesh ref={mesh} args={[null, null, count]}>
                 <dodecahedronBufferGeometry attach="geometry" args={[0.1, 0]} />
-                <meshBasicMaterial attach="material" color="#525252" />
+                <meshBasicMaterial attach="material" color="white" />
             </instancedMesh>
             </>
         )
@@ -119,8 +119,8 @@ function ThreeCanvas(props) {
             <Canvas
                 camera={{position: [0, 2, 7]}}
                 gl={{ powerPreference: "high-performance", alpha: false, antialias: false, stencil: false, depth: false }}>
-                <color attach="background" args={["#0a0a0a"]} />
-                <fog color="#212121" attach="fog" near={8} far={30} />
+                <color attach="background" args={["Brown"]} />
+                {/* <fog color="#212121" attach="fog" near={8} far={30} /> */}
                 {/* <mesh>
                     <boxGeometry />
                     <meshStandardMaterial />
