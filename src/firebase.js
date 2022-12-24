@@ -34,5 +34,5 @@ firebase.initializeApp(firebaseConfig);
 //const storage = firebase.storage();
 //const analytics = getAnalytics(app);
 
-//export {storage};
-export default firebase; */
+//export {storage};*/
+export default firebase; 
